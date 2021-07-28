@@ -160,5 +160,5 @@ STATIC_URL = '/static/'
 #
 print(PROJECT_ROOT)
 
-print(f'Using DATABASE_URL: {os.environ.get("DATABASE_URL", "Temporary SQLite DB")}')
-print(f'Using TEXTFILE_URL: {os.environ.get("TEXTFILE_URL", "None")}')
+print(f'Using DATABASE_URL: {os.environ.get("DATABASE_URL", "Using temp SQLite. Bind a mongo data capsule in the config tab to use it.")}')
+print(f'Using TEXTFILE_URL: {os.environ.get("TEXTFILE_URL", "DjangoTestWriteFile.txt on temporary filesystem. Bind a storage Data capsule in the config tab to use it.")}')
