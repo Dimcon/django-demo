@@ -21,10 +21,10 @@ def index(request):
             writeFile(fileValue + 1)
             fileValue = readFile()
         else:
-            tm.testField2 = int(round(float(tm.testField2))) + 1
+            tm.testField2 = int(round(float(str(tm.testField2)))) + 1
             tm.save()
     context = {
-        "DBValue": int(float(tm.testField2)),
+        "DBValue": int(float(str(tm.testField2))),
         "FileValue": int(fileValue),
         "FilePath": str(os.environ.get("TEXTFILE_URL", './DjangoTestWriteFile.txt'))
     }
