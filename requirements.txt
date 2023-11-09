@@ -19,8 +19,8 @@ gunicorn==20.0.4
 # mysql==0.0.2
 # mysqlclient
 
-psycopg
-#psycopg2==2.9.9
+# psycopg
+psycopg2
 
 # MYSQL Json Field provider
 # django-mysql
