@@ -19,6 +19,8 @@ msql==1.2.2
 # mysql==0.0.2
 # mysqlclient
 
+psycopg2
+
 # MYSQL Json Field provider
 # django-mysql
 
