@@ -86,7 +86,7 @@ db_url = os.environ.get("DATABASE_URL", False)
 
 if db_url:
     DATABASES = {
-        'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+        'default': dj_database_url.config(default=db_url)
     }
 else:
 
